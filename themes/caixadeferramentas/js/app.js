@@ -1,7 +1,7 @@
 function removeDuplicates(e,r){for(var n={},o=0,t=e.length;t>o;o++)n[e[o][r]]||(n[e[o][r]]=e[o]);var u=[];for(var c in n)u.push(n[c]);return u}
 
 var $J = jQuery.noConflict();
-var url = 'http://caixadeferramentas.local/wp-json/wp/v2/'
+var url = 'http://escoladejornalismo.org/caixadeferramentas/index.php?rest_route=/wp/v2/'
 var myApp = angular.module('caixaDeFerramentas',['ngResource', 'ngSanitize']);
 myApp.directive("formOnChange", function($parse){
   return {
