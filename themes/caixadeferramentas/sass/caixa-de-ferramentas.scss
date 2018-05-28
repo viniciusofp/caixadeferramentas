@@ -1,0 +1,102 @@
+.caixa-wrapper {
+  background: #ececec;
+	.caixa-header {
+		color: $white;
+		padding-top: 45px;
+		padding-bottom: 30px;
+		background: $purple;
+		svg.caixa-icon {
+			display: inline-block;
+			margin-right: 15px;
+			height: 4rem;
+			fill: $white;
+		}
+		h1 {
+			display: inline-block;
+			color: $white;
+			font-weight: 600;
+			margin-bottom: 20px;
+		}
+	}
+	.category-menu {
+		margin-left: 0;
+		padding-left: 0;
+		li {
+			border: 2px solid $yellow;
+			padding: 8px 15px;
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: .8rem;
+			font-weight: 600;
+			margin-left: -7px;
+			cursor: pointer;
+			transition: .2s;
+			&.active {
+				background: $yellow;
+				color: $purple;
+			}
+			&:hover:not(.active) {
+				color: $purple;
+				background: $white;
+			}
+			@media all and (max-width: 767px) {
+				display: block;
+				margin: 0 auto;
+				border: 2px solid $yellow;
+				margin-top: -2px;
+			}
+		}
+	}
+	form {
+		margin-bottom: 30px;
+		margin-top: 45px;
+		p {
+			color: $gray-600;
+     	margin-top: 10px;
+		}
+		.form-control {
+			border-radius: 0;
+			background: $white;
+			-webkit-appearance:none;
+			color: $purple;
+			border: 2px solid $yellow;
+			&:focus {
+				box-shadow: 0 0 0 0.2rem $yellow;
+			}
+		}
+		select.form-control {
+			background: $yellow;
+		}
+	}
+	.caixa-item {
+		background: #fff;
+		border: 1px solid #dedede;
+		padding: 30px;
+		margin-bottom: 30px;
+		min-height: 240px;
+		text-align: center;
+		&:hover {
+			background: $yellow;
+		}
+		.meta {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
+			padding: 45px;
+		}
+		h5 {
+			text-transform: uppercase;
+			color: $dark-grey;
+			font-size: .7rem;
+			margin-bottom: 15px;
+			margin-top: -1rem;
+		}
+		h2 {
+			font-weight: 600;
+			color: $purple;
+			font-size: 1.1rem;
+		}
+	}
+}

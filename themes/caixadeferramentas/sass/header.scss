@@ -1,0 +1,54 @@
+nav.container-fluid {
+	color: $gray-600;
+	background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/blackorchid.png");
+	@media all and (max-width: 991px) {
+		img {
+			height: 35px;
+		}
+	}
+	@media all and (max-width: 767px) {
+		img {
+			height: 25px;
+		}
+	}
+		
+	.menu-itens {
+		margin-left: auto;
+		@media all and (max-width: 767px) {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	ul {
+		margin-bottom: 0;
+		li {
+			@extend .list-inline-item;
+			text-align: center;
+			font-size: .8rem;
+			font-weight: 600;
+			margin-left: 15px;
+			text-transform: uppercase;
+			color: $purple;
+			padding: 40px 15px 37px;
+			a:hover {
+				color: $yellow;
+			}
+			@media all and (max-width: 767px) {
+				padding: 15px;
+			}
+		}
+	}
+	@media all and (max-width: 767px) {
+		text-align: center;
+		.align-self-center {
+			margin-left: auto;
+			margin-right: auto;
+			margin: 5px auto 15px;
+		}
+		img {
+			margin-left: auto;
+			margin-right: auto;
+			height: 38px;
+		}
+	}
+}

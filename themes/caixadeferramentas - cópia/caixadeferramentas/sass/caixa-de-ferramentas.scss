@@ -1,0 +1,84 @@
+.caixa-wrapper {
+	color: $white;
+	padding-top: 175px;
+	background: $dark-grey;
+	background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/blackorchid.png");
+	min-height: 100vh;
+	svg.caixa-icon {
+		display: inline-block;
+		margin-right: 15px;
+		height: 4rem;
+		fill: $yellow;
+	}
+	h1 {
+		display: inline-block;
+		color: $yellow;
+		font-weight: 600;
+		margin-bottom: 20px;
+	}
+	.category-menu {
+		margin-left: 0;
+		padding-left: 0;
+		li {
+			border: 2px solid transparentize($purple, .8);
+			padding: 8px 15px;
+			display: inline-block;
+			text-transform: uppercase;
+			font-size: .8rem;
+			margin-left: -7px;
+			cursor: pointer;
+			transition: .2s;
+			&.active {
+				background: $purple;
+			}
+			&:hover {
+				border: 2px solid $purple;
+			}
+		}
+	}
+	form {
+		margin-bottom: 30px;
+		margin-top: 45px;
+		p {
+			color: $gray;
+		}
+		.form-control {
+			border-radius: 0;
+			background: $dark-grey;
+			-webkit-appearance:none;
+			color: $yellow;
+			border: 1px solid $black;
+			&:focus {
+				box-shadow: 0 0 0 0.2rem $yellow;
+			}
+		}
+	}
+	.caixa-item {
+		border: 1px solid $gray;
+		padding: 30px;
+		margin-bottom: 30px;
+		min-height: 240px;
+		text-align: center;
+		&:hover {
+			background: $black;
+		}
+		.meta {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			width: 100%;
+			padding: 60px;
+		}
+		h5 {
+			text-transform: uppercase;
+			color: $gray;
+			font-size: .9rem;
+		}
+		h2 {
+			font-weight: 200;
+			color: $yellow;
+			font-size: 1.3rem;
+		}
+	}
+}
