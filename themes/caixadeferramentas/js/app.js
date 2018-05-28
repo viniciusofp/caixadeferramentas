@@ -29,7 +29,7 @@ myApp.factory('wp', ['$q', '$resource', function($q, $resource) {
     // })
     var i = 1;
 
-      var queryPosts = $resource( url+ 'posts?per_page=' + perpage + '&page=' + i ).query()
+      var queryPosts = $resource( url+ 'posts&per_page=' + perpage + '&page=' + i ).query()
       $q.all([
           queryPosts.$promise,
       ]).then( function (data) {
@@ -40,7 +40,7 @@ myApp.factory('wp', ['$q', '$resource', function($q, $resource) {
       });
 
 
-      var queryReferencias = $resource( url+ 'referencias?per_page=' + perpage + '&page=' + i ).query()
+      var queryReferencias = $resource( url+ 'referencias&per_page=' + perpage + '&page=' + i ).query()
       $q.all([
           queryReferencias.$promise,
       ]).then( function (data) {
@@ -54,7 +54,7 @@ myApp.factory('wp', ['$q', '$resource', function($q, $resource) {
         // Array.prototype.push.apply(results, data[0]);
       });
 
-      var querySensibilizacoes = $resource( url+ 'sensibilizacoes?per_page=' + perpage + '&page=' + i ).query()
+      var querySensibilizacoes = $resource( url+ 'sensibilizacoes&per_page=' + perpage + '&page=' + i ).query()
       $q.all([
           queryReferencias.$promise,
       ]).then( function (data) {
@@ -65,7 +65,7 @@ myApp.factory('wp', ['$q', '$resource', function($q, $resource) {
         Array.prototype.push.apply(results, data[0]);
       });
 
-      var queryAtividades = $resource( url+ 'atividades?per_page=' + perpage + '&page=' + i ).query()
+      var queryAtividades = $resource( url+ 'atividades&per_page=' + perpage + '&page=' + i ).query()
       $q.all([
           queryAtividades.$promise,
       ]).then( function (data) {
@@ -76,7 +76,7 @@ myApp.factory('wp', ['$q', '$resource', function($q, $resource) {
         Array.prototype.push.apply(results, data[0]);
       });
 
-      var queryContextos = $resource( url+ 'contextos?per_page=5&page=' + i ).query()
+      var queryContextos = $resource( url+ 'contextos&per_page=5&page=' + i ).query()
       $q.all([
           queryContextos.$promise,
       ]).then( function (data) {
@@ -93,7 +93,7 @@ myApp.factory('wp', ['$q', '$resource', function($q, $resource) {
   }
   wp.catCurso = function() {
     var results = [];
-    var queryCategories = $resource( url+ 'categories?per_page=50&parent=1' ).query()
+    var queryCategories = $resource( url+ 'categories&per_page=50&parent=1' ).query()
     $q.all([
         queryCategories.$promise,
     ]).then( function (data) {
@@ -104,7 +104,7 @@ myApp.factory('wp', ['$q', '$resource', function($q, $resource) {
   }
   wp.catJornal = function() {
     var results = [];
-    var queryCategories = $resource( url+ 'categories?per_page=50&parent=2' ).query()
+    var queryCategories = $resource( url+ 'categories&per_page=50&parent=2' ).query()
     $q.all([
         queryCategories.$promise,
     ]).then( function (data) {
@@ -115,7 +115,7 @@ myApp.factory('wp', ['$q', '$resource', function($q, $resource) {
   }
   wp.catGrupo = function() {
     var results = [];
-    var queryCategories = $resource( url+ 'categories?per_page=50&parent=3' ).query()
+    var queryCategories = $resource( url+ 'categories&per_page=50&parent=3' ).query()
     $q.all([
         queryCategories.$promise,
     ]).then( function (data) {
