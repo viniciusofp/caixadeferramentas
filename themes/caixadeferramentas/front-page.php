@@ -120,7 +120,7 @@ get_header();
 							Percurso</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="<?php echo site_url('/?p=?page_id=45'); ?>">
 							
 							<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
 							<svg version="1.1"
