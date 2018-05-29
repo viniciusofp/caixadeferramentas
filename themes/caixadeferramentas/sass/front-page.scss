@@ -32,15 +32,11 @@
 	}
 }
 .front-menu {
+	@media all and (max-width: 767px) {
+		display: none;
+	}
 	ul {
 		margin-bottom: 0;
-		@media all and (max-width: 767px) {
-			text-align: center;
-			li {
-				clear: both;
-				display: inline-block;
-			}
-		}
 		li {
 			position: relative;
 			margin-top: 60px;

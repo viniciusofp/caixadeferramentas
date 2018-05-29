@@ -90,7 +90,6 @@ get_header();
 									</g>
 								</g>
 							</svg>
-
 							Como Usar?</a>
 						</li>
 						<li>
@@ -115,8 +114,6 @@ get_header();
 										C37.1,47,36.9,45.6,36.9,44.3z M51.5,6.3c1.7,3.2,3.6,6.4,5.5,9.5c-2.6,0.4-5.2,0.9-7.7,1.5C50.4,13.9,50.9,10,51.5,6.3z"/>
 								</g>
 							</svg>
-
-
 							Percurso</a>
 						</li>
 						<li>
@@ -145,8 +142,6 @@ get_header();
 									</g>
 								</g>
 							</svg>
-
-
 							Caixa de Ferramentas</a>
 						</li>
 					</ul>
@@ -154,9 +149,6 @@ get_header();
 			</div>
 		</div>
 	</div>
-
-	<div class="credits">Desenvolvido por <a href="http://viniciusofp.com.br"><strong>viniciusofp</strong></a></div>
-
 </div>
 
 <?php

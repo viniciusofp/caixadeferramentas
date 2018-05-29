@@ -44,7 +44,8 @@ if ( ! function_exists( 'caixadeferramentas_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'caixadeferramentas' ),
+            'menu-1' => esc_html__( 'Primary', 'caixadeferramentas' ),
+            'footer' => esc_html__( 'Footer', 'caixadeferramentas' ),
 		) );
 
 		/*
@@ -164,6 +165,21 @@ if ( defined( 'JETPACK__VERSION' ) ) {
 // Tipos de post: sensibilização, referência, atividade
 
 function create_post_types() {
+  register_post_type( 'Percurso',
+    array(
+      'labels' => array(
+        'name' => __( 'Percurso' ),
+        'singular_name' => __( 'Percurso' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+      'show_in_rest' => true,
+      'menu_position' => 5,
+      'supports' => array('title', 'editor'),
+      'menu_icon' => "dashicons-randomize"
+    )
+  );
+
   register_post_type( 'referencias',
     array(
       'labels' => array(
