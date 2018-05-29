@@ -8,6 +8,7 @@
  */
 
 get_header();
+$ID = $post->ID;
 ?>
 
 <div class="single">
@@ -25,7 +26,7 @@ get_header();
 	<div class="single-content">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4">
+				<div class="col-md-4 percurso-menu">
 					<?php
 					$args = array(
 						'post_type' => 'percurso',
@@ -37,7 +38,13 @@ get_header();
 						<!-- pagination here -->
 						<!-- the loop -->
 						<?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-							<a href="<?php the_permalink();?>"><h3><?php the_title(); ?></h3></a>
+							<?php
+								$classMenu = '';
+								if (get_the_ID() == $ID) {
+									$classMenu = 'active';
+								}
+							?>
+							<a href="<?php the_permalink();?>"><h3 class="<?php echo $classMenu;?>"><?php the_title(); ?></h3></a>
 						<?php endwhile; ?>
 						<!-- end of the loop -->
 						<!-- pagination here -->
