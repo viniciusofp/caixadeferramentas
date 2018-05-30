@@ -22,11 +22,11 @@ get_header();
 				<div class="card">
 				  <div class="card-body">
 				  	<img class="d-block" src="<?php echo get_template_directory_uri();?>/img/logo_escola_livre.png" alt="">
-				    <p class="lead">Sistematização posuere lectus dui, sit amet congue ipsum pharetra.</p>
+						<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-						<p>A Escola de Jornalismo accumsan faucibus accumsan. Proin ullamcorper hendrerit metus, quis pretium arcu hendrerit nec. Pellentesque lacinia posuere placerat. Phasellus sapien sapien.</p>
+				    <?php the_content(); ?>
 
-						<p>Condimentum eu nisl eu, tincidunt semper velit. Aliquam ligula dolor, ornare non elit vel, vulputate dictum risus.</p>
+				  <?php endwhile; endif; ?>
 				  </div>
 				</div>
 			</div>
