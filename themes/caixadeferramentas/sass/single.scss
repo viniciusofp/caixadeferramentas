@@ -44,6 +44,7 @@
 			line-height: 1.2;
 		}
 		.col-md-8 {
+			word-wrap: break-word;
 			a {
 				color: $purple;
 				font-weight: 600;
@@ -52,6 +53,7 @@
       	display: inline;
     		background: $yellow;
 			}
+
 		}
 		.objetivo {
 			border-bottom: 3px solid $yellow;
