@@ -47,16 +47,15 @@ myApp.factory('wp', ['$q', '$resource', function($q, $resource) {
 
         data[0].forEach(function(post) {
           post.textQuery = post.title.rendered;
-          Array.prototype.push.apply(results, post);
         })
         // console.log('Referencias');
         // console.log(data[0]);
-        // Array.prototype.push.apply(results, data[0]);
+        Array.prototype.push.apply(results, data[0]);
       });
 
       var querySensibilizacoes = $resource( url+ 'sensibilizacoes&per_page=' + perpage + '&page=' + i ).query()
       $q.all([
-          queryReferencias.$promise,
+          querySensibilizacoes.$promise,
       ]).then( function (data) {
 
         data[0].forEach(function(post) {
@@ -139,6 +138,7 @@ myApp.controller('MainController', ['$scope', '$sce', 'wp', function($scope, $sc
       cat: 'Curso Introdutório'
     }
   };
+  console.log($scope.posts)
   $scope.console = function() {
     console.log($scope.posts)
   }

@@ -11,7 +11,7 @@ get_header();
 $ID = $post->ID;
 ?>
 
-<div class="single">
+<div class="single percurso">
 	<div class="single-header">
 		<div class="container">
 			<div class="row">

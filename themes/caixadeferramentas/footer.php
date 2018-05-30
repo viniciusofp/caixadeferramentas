@@ -17,7 +17,14 @@
 <div class="footer-wrapper">
 	<div class="container">
 		<div class="row">
-			<div class="col-12">
+			<div class="col-12 mt-3">
+				<ul class="list-inline">
+					<li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+					<li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li class="list-inline-item"><a href="#"><i class="fab fa-youtube"></i></a></li>
+				</ul>
+			</div>
+			<div class="col-12 footer-menu">
 				<?php wp_nav_menu( array(
 					'theme_location' => 'footer',
 					'menu_class' => 'list-inline'

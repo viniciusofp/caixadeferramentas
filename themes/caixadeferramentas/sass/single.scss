@@ -26,7 +26,7 @@
 		}
 	}
 	.single-content {
-		padding-top: 30px;
+		padding-top: 45px;
 		padding-bottom: 60px;
     background: #efefef;
 		h2 {
@@ -135,5 +135,10 @@
 		.active {
 			color: $purple;
 		}
+	}
+}
+.percurso {
+	h2 {
+		margin-top: 0!important;
 	}
 }
