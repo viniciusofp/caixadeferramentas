@@ -32,7 +32,7 @@ $contextos = get_field('contextos');
 						} else if (get_post_type() == 'atividades') {
 							echo 'Atividade';
 						} else if (get_post_type() == 'referencias') {
-							echo 'Referências';
+							echo 'Referência';
 						} else if (get_post_type() == 'contextos') {
 							echo 'Contexto';
 						}
@@ -99,7 +99,8 @@ $contextos = get_field('contextos');
 						<ul class="referencias">
 							<?php foreach ($referencias as $referencia): ?>
 				        <li>
-				            <a target="_blank" href="<?php echo get_field('url', $referencia->ID); ?>"><i class="fas fa-link mr-2"></i><?php echo get_the_title($referencia->ID); ?></a>
+				            <a target="_blank" href="<?php the_permalink($referencia->ID); ?>"><i class="fas fa-link mr-2"></i><?php echo get_the_title($referencia->ID); ?></a>
+				            <p style="line-height: 1.2rem;"><small><?php echo get_field('descricao', $referencia->ID) ?></small></p>
 				        </li>
 							<?php endforeach ?>
 						</ul>

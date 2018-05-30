@@ -80,18 +80,10 @@ get_header();
 		<div class="row">
 			<div ng-repeat="post in filteredPosts = (posts | filter: postFilter)" class="col-sm-6 col-lg-4 col-xl-3">
 
-				<a ng-if="post.type != 'referencias'" href="{{post.link}}">
+				<a href="{{post.link}}">
 					<div class="caixa-item">
 						<div class="meta">
-							<h5>{{post.tipo}}</h5>
-							<h2 ng-bind-html="post.title.rendered"></h2>
-						</div>
-					</div>
-				</a>
-				<a target="_blank" ng-if="post.type == 'referencias'" href="{{post.acf.url}}">
-					<div class="caixa-item">
-						<div class="meta">
-							<h5><i class="fas fa-link mr-2"></i>{{post.tipo}}</h5>
+							<h5><i ng-if="post.type == 'referencias'" class="fas fa-link mr-2"></i>{{post.tipo}}</h5>
 							<h2 ng-bind-html="post.title.rendered"></h2>
 						</div>
 					</div>

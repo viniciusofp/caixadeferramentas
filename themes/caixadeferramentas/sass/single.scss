@@ -40,6 +40,19 @@
 			font-size: 1.1rem;
 			font-weight: 600;
 		}
+		small {
+			line-height: 1.2;
+		}
+		.col-md-8 {
+			a {
+				color: $purple;
+				font-weight: 600;
+			}
+			a:hover {
+      	display: inline;
+    		background: $yellow;
+			}
+		}
 		.objetivo {
 			border-bottom: 3px solid $yellow;
 			padding-bottom: 45px;
