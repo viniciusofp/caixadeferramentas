@@ -142,3 +142,24 @@
 		margin-top: 0!important;
 	}
 }
+.share {
+	color: $yellow;
+	a:hover {
+		color: $purple;
+	}
+}
+.como-usar-video {
+	background: $purple;
+	.col-12 {
+		text-align: center;
+	}
+	video { 
+		@media all and (max-width: 767px) {
+			margin: 0 0 10px;
+		}
+		margin: 0 0px 60px;
+	  width:100%;
+	  max-width:1024px;
+	  height:auto;
+	}
+}

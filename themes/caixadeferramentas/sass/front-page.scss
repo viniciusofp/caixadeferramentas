@@ -1,10 +1,9 @@
 .home-wrapper {
 	position: relative;
-	width: 100%;
-	min-height: 100vh;
 	background: $yellow;
 	.row {
-		min-height: 100vh;
+		width: 100%;
+		min-height: calc(100vh - 190px);
 		padding-top: 45px;
 		padding-bottom: 45px;
 	}

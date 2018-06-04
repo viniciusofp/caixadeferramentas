@@ -20,31 +20,7 @@ $como_usar = get_field('como_usar');
 	<div class="single-header">
 		<div class="container">
 			<div class="row">
-				<div class="col-12">
-						<h4>
-						<?php 
-						if (get_post_type() == 'post') {
-							echo 'Aula';
-						} else if (get_post_type() == 'sensibilizacoes') {
-							echo 'Sensibilização';
-						} else if (get_post_type() == 'atividades') {
-							echo 'Atividade';
-						} else if (get_post_type() == 'referencias') {
-							echo 'Referências';
-						} else if (get_post_type() == 'contextos') {
-							echo 'Contexto';
-						}
-						?>
-						</h4>
-					
-					<h1><?php the_title(); ?></h1>
-					<h3>
-					<?php
-						$category = get_the_category(); 
-						echo $category[0]->cat_name;
-					?>
-					</h3>
-				</div>
+				<?php get_template_part( 'template-parts/single', 'header' ); ?> 
 			</div>
 		</div>
 	</div>
@@ -113,6 +89,7 @@ $como_usar = get_field('como_usar');
 						<?php endforeach; ?>
 						</ul>
 					<?php endif; ?>
+					<?php get_template_part( 'template-parts/single', 'share' ); ?> 
 					<a href="#" onclick="window.history.back();" class="voltar">
 						<p><i class="fas fa-arrow-left mr-1"></i> Voltar</p>
 					</a>
