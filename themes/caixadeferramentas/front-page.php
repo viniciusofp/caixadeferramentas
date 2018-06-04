@@ -34,7 +34,7 @@ get_header();
 				<div class="front-menu">
 					<ul class="list-unstyled">
 						<li>
-							<a href="#">
+							<a href="<?php echo site_url('/?page_id=86'); ?>">
 
 							<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
 							<svg version="1.1"
@@ -93,7 +93,7 @@ get_header();
 							Como Usar?</a>
 						</li>
 						<li>
-							<a href="#">
+							<a href="<?php echo site_url('/?percurso=percurso'); ?>">
 							
 							<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In  -->
 							<svg version="1.1"
